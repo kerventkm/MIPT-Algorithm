@@ -33,3 +33,6 @@ class Queue():
     
     def __len__(self):
         return self.len
+
+
+# we can use normal list and apply these functions

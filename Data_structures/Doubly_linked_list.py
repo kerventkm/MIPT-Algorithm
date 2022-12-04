@@ -67,9 +67,9 @@ class Linked_list():
 # from collections import deque - doubly linked list
 
 # push_back - O(1)
-# pop_back - O(N)
+# pop_back - O(1)
 # get - O(N)
 # insert - O(1) 
-# remove - O(N)
+# remove - O(1)
 # push_front - O(1)
 # pop_front - O(1)
