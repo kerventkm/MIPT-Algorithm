@@ -1,10 +1,14 @@
 class Linked_node():
-    def __init__(self, value, next):
+    def __init__(self, value, prev, next):
         self.value = value
+        self.prev = prev
         self.next = next
         
+    def __prev__(self):
+        return self.prev
+        
     def __next__(self):
-        return self.value
+        return self.next
     
     def get_value(self):
         return self.value
@@ -17,7 +21,7 @@ class Linked_list():
         self.len = 0
         
     def push_front(self, value):
-        new_node = Linked_node(value, self.head)
+        new_node = Linked_node(value, None, self.head)
         self.head = new_node
         if self.tail is None:
             self.tail = new_node
